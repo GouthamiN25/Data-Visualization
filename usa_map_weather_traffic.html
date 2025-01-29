@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10a18474b81dbe9df4db5e5fd4d101fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_10a18474b81dbe9df4db5e5fd4d101fe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_10a18474b81dbe9df4db5e5fd4d101fe = L.map(
+                "map_10a18474b81dbe9df4db5e5fd4d101fe",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e2a5bc9290be1c55a75d12ed1181498c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e2a5bc9290be1c55a75d12ed1181498c.addTo(map_10a18474b81dbe9df4db5e5fd4d101fe);
+        
+    
+            var marker_7ff82a221bd980ae83accae4e2fd85bd = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_10a18474b81dbe9df4db5e5fd4d101fe);
+        
+    
+            var icon_5282ab45ad949d25d2499edab3012fb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7ff82a221bd980ae83accae4e2fd85bd.setIcon(icon_5282ab45ad949d25d2499edab3012fb0);
+        
+    
+        var popup_c2f12a0320747edf9572db710ddd3722 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb94027d7343626441cec31f289202a2 = $(`<div id="html_bb94027d7343626441cec31f289202a2" style="width: 100.0%; height: 100.0%;">New York, NY<br>Weather data unavailable<br>Traffic data unavailable</div>`)[0];
+                popup_c2f12a0320747edf9572db710ddd3722.setContent(html_bb94027d7343626441cec31f289202a2);
+            
+        
+
+        marker_7ff82a221bd980ae83accae4e2fd85bd.bindPopup(popup_c2f12a0320747edf9572db710ddd3722)
+        ;
+
+        
+    
+    
+            marker_7ff82a221bd980ae83accae4e2fd85bd.bindTooltip(
+                `<div>
+                     New York, NY
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2abb450140654394086284312d75a254 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(map_10a18474b81dbe9df4db5e5fd4d101fe);
+        
+    
+            var icon_a6f60fc971a8998d164f32ed2137729b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2abb450140654394086284312d75a254.setIcon(icon_a6f60fc971a8998d164f32ed2137729b);
+        
+    
+        var popup_145433928b4a313f57b612c033d53d96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9621a78073735ed6a6ba9a658a130b8 = $(`<div id="html_d9621a78073735ed6a6ba9a658a130b8" style="width: 100.0%; height: 100.0%;">Los Angeles, CA<br>Weather data unavailable<br>Traffic data unavailable</div>`)[0];
+                popup_145433928b4a313f57b612c033d53d96.setContent(html_d9621a78073735ed6a6ba9a658a130b8);
+            
+        
+
+        marker_2abb450140654394086284312d75a254.bindPopup(popup_145433928b4a313f57b612c033d53d96)
+        ;
+
+        
+    
+    
+            marker_2abb450140654394086284312d75a254.bindTooltip(
+                `<div>
+                     Los Angeles, CA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d9b4c8aa84c2cef95ae609cd50f4ff7 = L.marker(
+                [41.8781, -87.6298],
+                {
+}
+            ).addTo(map_10a18474b81dbe9df4db5e5fd4d101fe);
+        
+    
+            var icon_4128ffc504c1e2fdd58ee1ed88a315c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d9b4c8aa84c2cef95ae609cd50f4ff7.setIcon(icon_4128ffc504c1e2fdd58ee1ed88a315c1);
+        
+    
+        var popup_228288db28fc3b9832031a422b413283 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fb3a29985c6d216984e8e6d7318c54d = $(`<div id="html_4fb3a29985c6d216984e8e6d7318c54d" style="width: 100.0%; height: 100.0%;">Chicago, IL<br>Weather data unavailable<br>Traffic data unavailable</div>`)[0];
+                popup_228288db28fc3b9832031a422b413283.setContent(html_4fb3a29985c6d216984e8e6d7318c54d);
+            
+        
+
+        marker_1d9b4c8aa84c2cef95ae609cd50f4ff7.bindPopup(popup_228288db28fc3b9832031a422b413283)
+        ;
+
+        
+    
+    
+            marker_1d9b4c8aa84c2cef95ae609cd50f4ff7.bindTooltip(
+                `<div>
+                     Chicago, IL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0f63e9e61551e2f7d0380a531bc5f56 = L.marker(
+                [29.7604, -95.3698],
+                {
+}
+            ).addTo(map_10a18474b81dbe9df4db5e5fd4d101fe);
+        
+    
+            var icon_130d99be7e2a1d62d2dc1d24ba72588a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c0f63e9e61551e2f7d0380a531bc5f56.setIcon(icon_130d99be7e2a1d62d2dc1d24ba72588a);
+        
+    
+        var popup_017217046e862bbc07a9231ce85986d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a231824fefd06499985338b92295271f = $(`<div id="html_a231824fefd06499985338b92295271f" style="width: 100.0%; height: 100.0%;">Houston, TX<br>Weather data unavailable<br>Traffic data unavailable</div>`)[0];
+                popup_017217046e862bbc07a9231ce85986d7.setContent(html_a231824fefd06499985338b92295271f);
+            
+        
+
+        marker_c0f63e9e61551e2f7d0380a531bc5f56.bindPopup(popup_017217046e862bbc07a9231ce85986d7)
+        ;
+
+        
+    
+    
+            marker_c0f63e9e61551e2f7d0380a531bc5f56.bindTooltip(
+                `<div>
+                     Houston, TX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae8afd8f1904fbda0d2649ec78567d63 = L.marker(
+                [37.7749, -122.4194],
+                {
+}
+            ).addTo(map_10a18474b81dbe9df4db5e5fd4d101fe);
+        
+    
+            var icon_f1792759621c9fb403093e0927830206 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ae8afd8f1904fbda0d2649ec78567d63.setIcon(icon_f1792759621c9fb403093e0927830206);
+        
+    
+        var popup_241ffc63ca3b1d4211dccf9c11278d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c9484a9bb5836b34174f2d8b987c0af = $(`<div id="html_4c9484a9bb5836b34174f2d8b987c0af" style="width: 100.0%; height: 100.0%;">San Francisco, CA<br>Weather data unavailable<br>Traffic data unavailable</div>`)[0];
+                popup_241ffc63ca3b1d4211dccf9c11278d38.setContent(html_4c9484a9bb5836b34174f2d8b987c0af);
+            
+        
+
+        marker_ae8afd8f1904fbda0d2649ec78567d63.bindPopup(popup_241ffc63ca3b1d4211dccf9c11278d38)
+        ;
+
+        
+    
+    
+            marker_ae8afd8f1904fbda0d2649ec78567d63.bindTooltip(
+                `<div>
+                     San Francisco, CA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
