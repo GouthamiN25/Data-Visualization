@@ -1,6 +1,7 @@
 # Geospatial Data Visualization & Interactive Mapping
 
-![geo](https://github.com/user-attachments/assets/8c6b6122-8b02-424f-8c05-de5a005da18c)
+<img width="704" alt="geo" src="https://github.com/user-attachments/assets/5fc2736d-f7a0-4b9f-8c84-6d4bceee740b" />
+
 
 # USA Location Map
 
