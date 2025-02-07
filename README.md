@@ -1,4 +1,7 @@
 # Geospatial Data Visualization & Interactive Mapping
+
+![geo](https://github.com/user-attachments/assets/8c6b6122-8b02-424f-8c05-de5a005da18c)
+
 # USA Location Map
 
 This project generates an interactive map using `folium` with specific locations in the United States. The locations are displayed with markers, tooltips, and popups for an enhanced user experience.
